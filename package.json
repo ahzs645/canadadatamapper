@@ -1,0 +1,14 @@
+{
+  "name": "canadadatamapper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "ised:cell-sites:sync": "node datascrapers/ised/cell-sites/sync-ised-cell-sites.mjs",
+    "ised:cell-sites:validate": "node datascrapers/ised/cell-sites/validate-output.mjs",
+    "test": "node --test 'datascrapers/**/*.test.mjs'"
+  }
+}

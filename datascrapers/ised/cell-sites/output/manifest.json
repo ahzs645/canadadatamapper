@@ -1,0 +1,257 @@
+{
+  "dataset": "ised-cell-sites",
+  "title": "Canadian cellular and spectrum-licence sites",
+  "publisher": "Innovation, Science and Economic Development Canada (ISED)",
+  "licence": "Open Government Licence – Canada",
+  "licenceUrl": "https://open.canada.ca/en/open-government-licence-canada",
+  "attribution": "Contains information licensed under the Open Government Licence – Canada (ISED Spectrum Management System).",
+  "caveat": "Sites are what licensees report to ISED, not measured coverage. One point is one reported coordinate; operators sharing a mast appear on the same point.",
+  "source": {
+    "url": "https://www.ic.gc.ca/engineering/SMS_TAFL_Files/Site_Data_Extract_FX.zip",
+    "pageUrl": "https://ised-isde.canada.ca/site/spectrum-management-system/en/spectrum-management-system-data/download-sms-data",
+    "csvEntry": "Site_Data_Extract_FX.csv",
+    "lastModified": "Tue, 06 Oct 2026 04:06:29 GMT",
+    "extractDate": "2026-10-06",
+    "etag": "\"40ee0ca-65d241f80bb40\"",
+    "bytes": 68083914
+  },
+  "method": {
+    "keyDecimals": 5,
+    "grouping": "Rows sharing latitude/longitude rounded to keyDecimals form one site.",
+    "bands": "ISED licence_category codes (e.g. CELL, PCS, AWS, 600B, MBS, BRS, 3500B, 3800B).",
+    "siteTypes": "O outdoor, I indoor.",
+    "droppedFields": [
+      "contact_name",
+      "business_telephone",
+      "email_address"
+    ]
+  },
+  "rows": {
+    "read": 2038479,
+    "used": 2038361,
+    "rejected": {
+      "column-count": 82,
+      "coordinates": 36
+    }
+  },
+  "sites": 54720,
+  "operators": {
+    "TELUS": 15020,
+    "Rogers": 12481,
+    "Bell": 10738,
+    "Railway Association of Canada": 5852,
+    "Vidéotron": 4117,
+    "Xplore": 1767,
+    "TeraGo": 1242,
+    "Eastlink": 1194,
+    "SaskTel": 1159,
+    "Freedom": 811,
+    "TBayTel": 524,
+    "LEMALU HOLDINGS LTD MCSNet": 349,
+    "Backhaul Network Services Inc.": 215,
+    "SSI Micro Ltd.": 98,
+    "Ecotel": 83,
+    "Orion Wireless Partnership (WCS)": 79,
+    "Cogeco Connexion Inc.": 54,
+    "Sogetel": 34,
+    "1085459 Ontario Ltd.": 21,
+    "Keewaytinook Okimakanak": 20,
+    "ABC Internet Inc,": 19,
+    "Dow Chemical Canada ULC": 19,
+    "Kativik Regional Government": 17,
+    "ICE WIRELESS INC.": 16,
+    "i-MobileCa inc.": 15,
+    "Iris Technologies": 8,
+    "Teck Resources Limited": 7,
+    "WTC Communications": 7,
+    "Truespeed Internet Services": 5,
+    "X-Spectrum": 5,
+    "Minto Communications Society": 4,
+    "EXECULINK TELECOM INC. (PCS/Cell)": 3,
+    "NEXICOM INC.": 3,
+    "Rio Tinto Canada Management inc.": 3,
+    "676766 Ontario Limited": 2,
+    "HURON TELECOMMUNICATIONS CO-OPERATIVE LTD": 1,
+    "Skysurf Canada Communications Inc.": 1
+  },
+  "licensees": {
+    "1085459 Ontario Ltd.": [
+      "1085459 Ontario Ltd."
+    ],
+    "676766 Ontario Limited": [
+      "676766 Ontario Limited"
+    ],
+    "ABC Internet Inc,": [
+      "ABC Internet Inc,"
+    ],
+    "Backhaul Network Services Inc.": [
+      "Backhaul Network Services Inc."
+    ],
+    "Bell": [
+      "Bell Canada",
+      "Bell MTS, a division of Bell Canada",
+      "Bell Mobility Inc."
+    ],
+    "Cogeco Connexion Inc.": [
+      "Cogeco Connexion Inc."
+    ],
+    "Dow Chemical Canada ULC": [
+      "Dow Chemical Canada ULC"
+    ],
+    "EXECULINK TELECOM INC. (PCS/Cell)": [
+      "EXECULINK TELECOM INC. (PCS/Cell)"
+    ],
+    "Eastlink": [
+      "Bragg Communications Inc."
+    ],
+    "Ecotel": [
+      "ECOTEL inc.",
+      "Ecotel inc."
+    ],
+    "Freedom": [
+      "Videotron Ltd. dba Freedom Mobile"
+    ],
+    "HURON TELECOMMUNICATIONS CO-OPERATIVE LTD": [
+      "HURON TELECOMMUNICATIONS CO-OPERATIVE LTD"
+    ],
+    "ICE WIRELESS INC.": [
+      "ICE WIRELESS INC."
+    ],
+    "Iris Technologies": [
+      "Iris Technologies"
+    ],
+    "Kativik Regional Government": [
+      "Kativik Regional Government"
+    ],
+    "Keewaytinook Okimakanak": [
+      "Keewaytinook Okimakanak"
+    ],
+    "LEMALU HOLDINGS LTD MCSNet": [
+      "LEMALU HOLDINGS LTD MCSNet"
+    ],
+    "Minto Communications Society": [
+      "Minto Communications Society"
+    ],
+    "NEXICOM INC.": [
+      "NEXICOM INC."
+    ],
+    "Orion Wireless Partnership (WCS)": [
+      "Orion Wireless Partnership (WCS)"
+    ],
+    "Railway Association of Canada": [
+      "The Railway Association of Canada"
+    ],
+    "Rio Tinto Canada Management inc.": [
+      "Rio Tinto Canada Management inc."
+    ],
+    "Rogers": [
+      "FIDO SOLUTIONS INC.",
+      "Rogers Communications Canada Inc."
+    ],
+    "SSI Micro Ltd.": [
+      "SSI Micro Ltd."
+    ],
+    "SaskTel": [
+      "Saskatchewan Telecommunications",
+      "Sasktel (AWS/PCS)",
+      "Sasktel (BRS) Eng. Manager - Wireless Networks",
+      "Sasktel (PCS) Eng. Manager - Wireless Network",
+      "Sasktel Mobility (Cell/PCS)"
+    ],
+    "Skysurf Canada Communications Inc.": [
+      "Skysurf Canada Communications Inc."
+    ],
+    "Sogetel": [
+      "Sogetel Mobilité inc."
+    ],
+    "TBayTel": [
+      "TBayTel - Mobility"
+    ],
+    "TELUS": [
+      "TELUS Communications Company",
+      "TELUS Communications Inc.",
+      "Telus – Regulatory Affairs"
+    ],
+    "Teck Resources Limited": [
+      "Teck Resources Limited"
+    ],
+    "TeraGo": [
+      "TeraGo Networks Inc."
+    ],
+    "Truespeed Internet Services": [
+      "Truespeed Internet Services"
+    ],
+    "Vidéotron": [
+      "Vidéotron Itée",
+      "Vidéotron ltée"
+    ],
+    "WTC Communications": [
+      "WTC COMMUNICATIONS",
+      "WTC Communications The Westport Telephone Company Limi"
+    ],
+    "X-Spectrum": [
+      "X-Spectrum 1 Inc.",
+      "X-Spectrum 2 Inc."
+    ],
+    "Xplore": [
+      "Xplore Inc.",
+      "Xplore Spectrum 1 Network Limited Partnership"
+    ],
+    "i-MobileCa inc.": [
+      "i-MobileCa inc."
+    ]
+  },
+  "provinces": {
+    "ON": 16985,
+    "BC": 11360,
+    "QC": 10934,
+    "AB": 6639,
+    "SK": 2144,
+    "MB": 1992,
+    "NS": 1976,
+    "NB": 1395,
+    "NL": 768,
+    "PE": 260,
+    "NU": 103,
+    "NT": 98,
+    "YT": 66
+  },
+  "technologies": {
+    "LTE": 45513,
+    "5GNR": 24208,
+    "HSPA": 14950,
+    "5GDSS": 10915,
+    "Other": 7842,
+    "GSM": 5294,
+    "Wi-Fi": 17,
+    "WiMax": 7
+  },
+  "bands": {
+    "AWS": 36234,
+    "PCS": 32340,
+    "MBS": 21231,
+    "BRS": 18180,
+    "CELL": 17295,
+    "AWS-3": 16561,
+    "3500B": 12724,
+    "600B": 12643,
+    "AWS-4": 8137,
+    "RAC": 5852,
+    "PCSG": 5796,
+    "3800B": 2951,
+    "BWA24": 1015,
+    "WBS": 935,
+    "WCS": 803,
+    "FCFS38": 352,
+    "BWA38": 233,
+    "FIXED": 3,
+    "AGND": 1
+  },
+  "output": {
+    "path": "cell-sites.geojson.gz",
+    "bytes": 1677991,
+    "uncompressedBytes": 23098698,
+    "sha256": "78dc1d5745b62e57ba8b9bb5456f0a41fcd6e199e73d0cadadae17fa9d187a42",
+    "uncompressedSha256": "e5e571a03cc9b7091349a19dba08148de0f53b997e56f4a86080623836ba1a12"
+  }
+}

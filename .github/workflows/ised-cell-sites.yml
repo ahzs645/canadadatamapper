@@ -1,0 +1,45 @@
+name: ISED cell sites
+
+# ISED republishes the site extract monthly, early in the month. The sync HEADs
+# the source first and does nothing when it has not changed.
+on:
+  schedule:
+    - cron: '17 9 10 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ised-cell-sites
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm test
+
+      - name: Sync site extract
+        run: npm run ised:cell-sites:sync -- --if-changed
+
+      - run: npm run ised:cell-sites:validate
+
+      - name: Commit refreshed snapshot
+        run: |
+          if git diff --quiet -- datascrapers/ised/cell-sites/output; then
+            echo "No snapshot change"
+            exit 0
+          fi
+          extract=$(node -p "require('./datascrapers/ised/cell-sites/output/manifest.json').source.extractDate")
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898299+github-actions[bot]@users.noreply.github.com'
+          git add datascrapers/ised/cell-sites/output
+          git commit -m "Refresh ISED cell sites to the ${extract} extract"
+          git push

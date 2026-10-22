@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+*.log
+tmp/
+# Raw source downloads (the ISED site extract is 65 MB zipped, 1.2 GB of CSV).
+cache/
